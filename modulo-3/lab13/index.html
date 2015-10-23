@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html ng-app="lab12">							<!-- nombre como modulo específico -->
+<head>
+	<title>ANGULAR MODULOS - EJEMPLO 2</title>
+	<meta charset="utf-8" />
+</head>
+<body>
+<<<<<<< HEAD
+	<div ng-controller="lab12Controller">			<!-- directiva para controlador desde la linea 8 hasta la 17 -->
+=======
+	<div ng-controller="lab12Controller">			<!-- directiva para controlador desde la linea 8 hasta la 14 -->
+>>>>>>> origin/master
+		<div ng-show="lab12Div">				<!-- directiva ng-show: true o falses (muestra, oculta)-->
+			<p>
+            "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+            </p>
+		</div>
+
+		<button ng-click="lab12Button()" ng-show="Button">Ocultar texto</button> <!-- dos directivas ng-click: evento click desencadena funcion que cambia el valor de los modelos,  ng-show -->
+        <button ng-click="lab12Button2()" ng-show="Button2">Ver texto</button> <!-- dos directivas ng-click: evento click desencadena funcion que cambia el valor de los modelos,  ng-show -->
+	</div>
+<<<<<<< HEAD
+<script type="text/javascript" src="../assets/angular.min.js"></script>
+<script type="text/javascript">
+=======
+	<script type="text/javascript" src="../assets/angular.min.js"></script>
+
+	<script type="text/javascript">
+>>>>>>> origin/master
+
+	angular.module('lab12', [])		//metodo angular para modulos ('nombre modulo', modulos externos)
+		   .controller('lab12Controller', function($scope){		//metodo angular para controladores , $scope: objeto para modelos en angular
+		   		$scope.lab12Div = true;		//esto manda un false a revealdiv lo que quiere decir que esta oculto
+		   		$scope.Button = true;
+				$scope.Button2 = false;
+
+		   		$scope.lab12Button = function(){		//funcion al darle click al boton que invierte los valores de revaldiv
+		   			$scope.lab12Div = false;
+		   			$scope.Button = false;
+					$scope.Button2 = true;
+		   		};
+				
+				$scope.lab12Button2 = function(){		//funcion al darle click al boton que invierte los valores de revaldiv
+		   			$scope.lab12Div = true;
+		   			$scope.Button = true;
+					$scope.Button2 = false;
+		   		};
+				
+		   });
+		   
+<<<<<<< HEAD
+</script>
+=======
+	</script>
+>>>>>>> origin/master
+
+
+</body>
+</html>

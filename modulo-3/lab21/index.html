@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html ng-app="initial_spi">
+<head>
+	<title>Lab21</title>
+	<meta charset="utf-8" />
+	<script type="text/javascript" src="../assets/angular.min.js"></script>
+</head>
+<body>
+   <h1>Visita el Zoo</h1>
+
+    <div ng-include src=" 'includes/header.html' "></div>	<!-- para cargar contenidos con include -->
+    <div ng-include src=" 'includes/menu.html' "></div>
+
+
+    <script>
+        angular.module('initial_spi', []);  //inicializa rutas para cargar los html externos
+    </script>
+</body>
+</html>

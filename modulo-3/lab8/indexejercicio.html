@@ -1,0 +1,29 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>modulo 3 - lab 8 - jquey</title>
+    <script src="js/jquery-1.11.3.min.js"></script>
+    <link type="text/css" rel="stylesheet" href="css/styles.css">
+    
+    <script>
+	$(document).ready(function(){
+		// Agregar texto y agregar html
+		$("#prueba").text("esto es una prueba");
+		$(".prueba").html("<strong>esto es una prueba</strong>");
+		
+		//Obtener el id
+		var clase = $("#prueba").attr("id");
+		console.log(clase);
+		
+		//asignar o agregar elemento 
+		$("#prueba").attr("class", "ejemplo");
+	});
+	</script>
+</head>
+
+<body>
+	<div id="prueba"></div>
+	<div class="prueba"></div>
+</body>
+</html>

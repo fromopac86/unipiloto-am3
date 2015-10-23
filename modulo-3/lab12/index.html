@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html ng-app="reveal-app">							<!-- nombre como modulo específico -->
+<head>
+<<<<<<< HEAD
+	<title>MODULOS - EJEMPLO 1 - OCULTAR Y APARECER</title>
+=======
+	<title>MODULOS - EJEMPLO 1</title>
+>>>>>>> origin/master
+	<meta charset="utf-8" />
+</head>
+<body>
+	<div ng-controller="controllerOne">			<!-- directiva para controlador desde la linea 8 hasta la 14 -->
+		<div ng-show="revealDiv">				<!-- directiva ng-show: true o falses (muestra, oculta)-->
+			<h1>Hola mundo</h1>
+		</div>
+
+		<button ng-click="controlButton()" ng-show="revealButton">Ocultar button</button> <!-- dos directivas ng-click: evento click desencadena funcion que cambia el valor de los modelos,  ng-show -->
+	</div>
+	<script type="text/javascript" src="../assets/angular.min.js"></script>
+
+	<script type="text/javascript">
+
+	angular.module('reveal-app', [])		//metodo angular para modulos ('nombre modulo', modulos externos)
+		   .controller('controllerOne', function($scope){		//metodo angular para controladores , $scope: objeto para modelos en angular
+		   		$scope.revealDiv = false;		//esto manda un false a revealdiv lo que quiere decir que esta oculto
+		   		$scope.revealButton = true;
+
+		   		$scope.controlButton = function(){		//funcion al darle click al boton que invierte los valores de revaldiv
+		   			$scope.revealDiv = true;
+		   			$scope.revealButton = false;
+		   		};
+
+		   });
+	</script>
+
+
+</body>
+</html>

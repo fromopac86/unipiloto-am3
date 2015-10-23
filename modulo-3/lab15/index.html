@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html ng-app="tech">
+<head>
+	<title>AngularJS - Iteraciones / Ejemplo</title>
+	<meta charset="utf-8" />
+	<script type="text/javascript" src="../assets/angular.min.js"></script>
+</head>
+<body>
+	<div ng-controller="techController">
+		<h1>Names</h1>
+		<ul>
+			<li ng-repeat="language in languages">{{ language }}</li>
+		</ul>
+	</div>
+	
+	<script type="text/javascript">
+	angular.module('tech', [])
+	       .controller('techController', function($scope){
+	       	$scope.languages = ["C", "C++", "Java", "ASEMBLER", "PHP", ".Net"];
+         
+		    })
+		
+	</script>
+</body>
+</html>

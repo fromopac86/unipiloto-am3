@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html ng-app="initial_spi">
+<head>
+	<title>Lab24 rutas</title>
+	<meta charset="utf-8" />
+	<script type="text/javascript" src="../assets/angular.min.js"></script>
+	<script type="text/javascript" src="../assets/angular-route.min.js"></script>
+</head>
+<body>
+   <h1>APLICACION ANGULAR</h1>
+
+    <div ng-include src=" 'includes/header.html' "></div>
+    <div ng-include src=" 'includes/menu.html' "></div>
+    <a href="#/prueba">prueba</a>
+
+    <div ng-view></div>
+
+    <script>
+        angular.module('initial_spi', ['ngRoute'])					//ngRoute definido por angular
+            .config(['$routeProvider', function($routeProvider){	//manejo de rutas 
+
+            $routeProvider
+
+            .when('/home', {
+                templateUrl : "home.html"
+            })
+            
+            .when('/about', 
+                {
+                    templateUrl: "about.html"
+                })
+            
+			 .when('/contact', 
+                {
+                    templateUrl: "contact.html"
+                })
+            .otherwise({							
+                redirectTo: '/',
+                templateUrl: 'otherwise.html'
+            });
+
+               }])
+    </script>
+</body>
+</html>
