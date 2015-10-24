@@ -1,0 +1,22 @@
+[
+	{
+	"Producto" : "cemento",
+	"Precio" : 17000,
+	"Cantidad" : "1 bulto"
+	},
+	{
+	"Producto" : "pintura",
+	"Precio" : 13000,
+	"Cantidad" : " 1 galon"
+	},
+	{
+	"Producto" : "alcohol",
+	"Precio" : 7500,
+	"Cantidad" : "1 litro"
+	},
+	{
+	"Producto" : "destornillador",
+	"Precio" : 8900,
+	"Cantidad" : "1"
+	}
+]

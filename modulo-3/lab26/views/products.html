@@ -1,0 +1,14 @@
+<div ng-controller="ProductController">
+		<table>
+		   <tr>
+		      <th>Producto</th>
+		      <th>Precio</th>
+			  <th>Cantidad</th>
+		   </tr>
+		   <tr ng-repeat="product in products">
+		      <td>{{ product.Producto }}</td>
+		      <td>{{ product.Precio }}</td>
+			  <td>{{ product.Cantidad }}</td>
+		   </tr>
+		</table>
+</div>

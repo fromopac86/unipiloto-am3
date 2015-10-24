@@ -1,7 +1,7 @@
 angular.module('initial_spi.controllers', [])
 
 .controller('mobileController', function($scope){
-	$scope.mobile_message = 'Algún Mensaje';
+	$scope.mobile_message = 'Algún ';
 })
 
 .controller('smartphoneController', function($scope){
