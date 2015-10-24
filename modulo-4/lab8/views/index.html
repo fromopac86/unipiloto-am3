@@ -1,0 +1,21 @@
+<!doctype html>
+<html lang="en" data-framework="angularjs">	<!-- el data es informativo de la tecnologia que estoy usando-->
+	<head>
+		<meta charset="utf-8">
+		<title>AngularJS</title>
+	</head>
+	<body>
+        <script src="libs/angular.min.js"></script>
+		<script src="libs/angular-route.min.js"></script>
+        <script src="libs/angular-resource.min.js"></script>
+		<script src="app.js"></script>
+        <script src="services/services.js"></script>
+		<script src="controllers/controllers.js"></script>
+        <div ng-app="lab8">
+            <h1>Hola Mundo</h1>
+            <a href="contact"> contact</a>
+  
+         <div ng-view></div>
+        </div>
+	</body>
+</html>
